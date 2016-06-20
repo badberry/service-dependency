@@ -9,6 +9,7 @@
     <version>1.0</version>
 
     <name>Service Dependency</name>
+    <description>Micro Service Dependency Define</description>
     <packaging>pom</packaging>
 
     <parent>
@@ -48,7 +49,8 @@
 
     <properties>
         <rest.assured.version>2.3.3</rest.assured.version>
-        <swagger.version>2.2.2</swagger.version>
+        <swagger.version>1.5.3</swagger.version>
+        <swagger.springfox.version>2.2.2</swagger.springfox.version>
         <apache.commons.version>3.4</apache.commons.version>
         <etcd4j.version>2.11.0</etcd4j.version>
     </properties>
@@ -59,11 +61,16 @@
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger.version}</version>
+                <version>${swagger.springfox.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.springfox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
 
